@@ -18,7 +18,6 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-
 	d := json.NewDecoder(f)
 	var story cyoa.Story
 	if err := d.Decode(&story); err != nil {
