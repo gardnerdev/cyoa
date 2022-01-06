@@ -26,7 +26,7 @@ func main() {
 		panic(err)
 	}
 
-	h := cyoa.NewHandler(story)
+	h := cyoa.NewHandler(story, nil) //ability to pass custom template
 	fmt.Printf("Starting server on port: %d\n", *port)
 	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%d", *port), h))
 }
