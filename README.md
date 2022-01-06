@@ -14,3 +14,5 @@ Usage:
 ```
 go run cmd/cyoa/main.go
 ```
+
+Go to: `localhost:3000/story`
