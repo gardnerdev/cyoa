@@ -25,18 +25,20 @@ var defaultHanlderTmpl = `
     <title>Choose your own adventure</title>
 </head>
 <body>
-    <h1>{{.Title}}</h1>
-    {{ range .Paragraphs}}
-    <p>{{.}}</p>
-    {{end}}
-    <ul>
-    {{range .Options}}
-    <li><a href="/{{.Chapter}}">{{.Text}}
-    </a>
-    </li>
-    {{ end }}
-    </ul>
-    <style>
+	<section class="page">
+		<h1>{{.Title}}</h1>
+		{{ range .Paragraphs}}
+		<p>{{.}}</p>
+		{{end}}
+		<ul>
+		{{range .Options}}
+		<li><a href="/{{.Chapter}}">{{.Text}}
+		</a>
+		</li>
+		{{ end }}
+		</ul>
+		<style>
+	</section>
 	body {
 	font-family: helvetica, arial;
 	}
