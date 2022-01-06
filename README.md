@@ -16,3 +16,6 @@ go run cmd/cyoa/main.go
 ```
 
 Go to: `localhost:3000/story`
+
+
+![Alt text](./go-story.png?raw=true "Go story")
